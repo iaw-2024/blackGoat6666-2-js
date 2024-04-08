@@ -36,8 +36,22 @@
     <main class="container-fluid flex mx-auto justify-center bg-section">
         <section class="container-fluid w-3/4">
             <h1 class="text-6xl text-center text-white bg-black">Mounstrous</h1>
-            <ul id="lista-monstruos" class="justify-between">
-                <!-- Los elementos de la lista se agregarán aquí dinámicamente -->
+            <ul class="justify-between">
+              {{#each this}}
+              <li class="flex text-center m-8 bg-item">
+                <div class="flex m-8">
+                    <div class="w-1/2 ">
+                        <h1 class="text-base md:text-5xl font-bold text-center m-auto">{{nombre}}</h1>
+                        <p class="text-base md:text-2xl text-center m-auto">{{descripcion}}</p>
+                        <h4 class="text-base md:text-3xl font-bold text-center m-auto">{{color}}</h4>
+                        <h5 class="text-base md:text-3xl font-bold text-center m-auto">{{#each habilidades}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</h5>
+                    </div>
+                    <div class="w-1/2 ">
+                        <img class="h-80 object-contain sm:h-auto rounded-md" src="{{imagen}}" alt="{{nombre}}">
+                    </div>
+                </div>
+              </li>
+              {{/each}}
             </ul>
             
         </section>
@@ -48,7 +62,5 @@
     <footer class="footer">
       <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

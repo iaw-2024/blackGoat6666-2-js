@@ -1,0 +1,52 @@
+[
+    {
+      "nombre": "Enrique",
+      "descripcion": "Es una criatura concebida por Dios en la Creación.",
+      "color": "Azul",
+      "habilidades": ["Garras"],
+      "imagen": "https://png.pngtree.com/thumb_back/fw800/background/20230612/pngtree-white-drawing-of-a-large-dragon-on-the-water-image_2890131.jpg"
+    },
+    {
+      "nombre": "TUlu",
+      "descripcion": "\"Un monstruo de contornos vagamente antropoides, pero con una cabeza redonda un cuerpo escamoso, cuatro extremidades dotadas de garras enormes\"",
+      "color": "Verde",
+      "habilidades": ["Garras", "Dientes"],
+      "imagen": "https://cdn.thecollector.com/wp-content/uploads/2023/04/hp-lovecraft-cthulhu-mythos.jpg"
+    },
+    {
+      "nombre": "Eschila",
+      "descripcion": "Escila era hija del dios marino Forcis y del monstruo marino Ceto (de la que procede la palabra “cetáceo”).",
+      "color": "Rojo",
+      "habilidades": ["Garras", "Dientes"],
+      "imagen": "https://i.pinimg.com/originals/45/5a/96/455a967625db939b8426b256e5b57afa.jpg"
+    },
+    {
+      "nombre": "Ryūjin",
+      "descripcion": "Esta criatura es un dragón que en la mitología japonesa representa el poder del mar.",
+      "color": "Amarillo",
+      "habilidades": ["Garras", "Dientes", "Veneno"],
+      "imagen": "https://asiamitica.com/wp-content/uploads/2024/01/ryujin1.jpg"
+    },
+    {
+      "nombre": "Lerni",
+      "descripcion": "Hija del dios Tifón (relacionado con los huracanes) y de Equidna, una monstruosa ninfa con cuerpo de serpiente y la parte superior de mujer.",
+      "color": "Verde",
+      "habilidades": ["Garras", "Veneno"],
+      "imagen": "https://academiaplay.net/wp-content/uploads/2018/06/web-Hydra1.jpg"
+    },
+    {
+      "nombre": "Nargacuga",
+      "descripcion": "Un depredador acechante conocido por su velocidad y ferocidad. Es capaz de volar gracias a unas alas membranosas.",
+      "color": "Negro",
+      "habilidades": ["Garras", "Colmillos afilados", "Velocidad"],
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/06/monster-hunter-rise-sunbreak-2730123.jpg?tf=3840x"
+    },
+    {
+      "nombre": "Kappa",
+      "descripcion": "Un yokai acuático del folclore japonés. Tiene una apariencia similar a una tortuga y un cuenco en la cabeza lleno de agua.",
+      "color": "Verde",
+      "habilidades": ["Natación rápida", "Fuerza sobrenatural", "Manipulación del agua"],
+      "imagen": "https://www.nippon.com/es/ncommon/contents/japan-topics/1837879/1837879.jpg"
+    }
+  ]
+  
