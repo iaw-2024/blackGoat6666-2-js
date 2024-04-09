@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-section {
+          background-image: url('https://i.pinimg.com/564x/67/5d/d5/675dd5de17aa82b8b2ea5e33137677e8.jpg');
+        }
+        .bg-item {
+          background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/006/757/small/texture-of-white-crumpled-paper-illustration-vector.jpg');
+        }
+      </style>
+  </head>
+
+  <body>
+
+    <header class="container mx-auto h-16">
+      <div class="flex justify-between items-center">
+        <div>
+          <a href="../../index.html" class="text-yellow-500 hover:text-yellow-700 font-bold">Volver a Inicio</a>
+        </div>
+        <div>
+          <h1 class="text-base md:text-4xl font-bold">Mounstrous . com</h1>
+        </div>
+        <div>
+          <img class="h-16" src="https://i.pinimg.com/564x/25/86/27/25862772900375df6e576a55d400b30e.jpg" alt="Logo">
+        </div>
+      </div>
+    </header>
+    
+    <main class="container-fluid flex mx-auto justify-center bg-section">
+        <section class="container-fluid w-3/4">
+            <h1 class="text-6xl text-center text-white bg-black">Mounstrous</h1>
+            <ul id="lista-monstruos" class="justify-between">
+                <!-- Los elementos de la lista se agregarán aquí dinámicamente -->
+                
+            </ul>
+            
+        </section>
+        
+    </main>
+
+
+    <footer class="footer">
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+
+    <script>
+        const listaMonstruos = document.getElementById('lista-monstruos');
+
+        var url = '/mounstruos'; 
+        fetch(url)
+        .then(response => response.json())
+        .then(monstruos => {
+            monstruos.forEach(monstruo => {
+                    const li = document.createElement('li');
+                    li.className = 'flex text-center m-8 bg-item';
+                    li.innerHTML = `
+                        <div class="m-8 w-1/2">
+                            <h1 class="text-base md:text-5xl font-bold text-center">${monstruo.nombre}</h1>
+                            <p class="text-base md:text-2xl">${monstruo.descripcion}</p>
+                            <h4 class="text-base md:text-3xl font-bold">Color: ${monstruo.color}</h4>
+                            <h5 class="text-base md:text-3xl font-bold">Habilidades: ${monstruo.habilidades}</h5>
+                        </div>
+                        <div class="m-8 w-1/2 flex justify-center items-center">
+                            <img class="h-80 object-contain sm:h-auto rounded-md" src="${monstruo.imagen}" alt="${monstruo.nombre}">
+                        </div>
+                    `;
+                    listaMonstruos.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error al cargar los datos:', error));
+
+        </script>
+  </body>
+</html>
